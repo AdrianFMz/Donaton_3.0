@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4ypOvx8JKJc=",
+  "dgSpecHash": "RQo92LD8hyI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\BlazingAdrian\\Desktop\\Donaton Plus\\Donaton_3.0\\Donaton.API\\Donaton.API.csproj",
+  "projectFilePath": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Donaton.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\BlazingAdrian\\.nuget\\packages\\bcrypt.net-next\\4.2.0\\bcrypt.net-next.4.2.0.nupkg.sha512",
     "C:\\Users\\BlazingAdrian\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -38,6 +38,20 @@ namespace Donaton.API.Controllers
 
         }
 
+        // GET: api/Causes/5 (Devuelve los detalles de una sola causa)
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Cause>> GetCause(int id)
+        {
+            var cause = await _context.Causes.FindAsync(id);
+
+            if (cause == null)
+            {
+                return NotFound("La causa especificada no existe.");
+            }
+
+            return cause;
+        }
+
         // PUT: api/Causes/5 (Actualizar una causa existente)
         //[Authorize]
         [HttpPut("{id}")]

@@ -3098,11 +3098,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BlazingAdrian\\Desktop\\Donaton Plus\\Donaton_3.0\\Donaton.API\\Donaton.API.csproj",
+      "projectUniqueName": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Donaton.API.csproj",
       "projectName": "Donaton.API",
-      "projectPath": "C:\\Users\\BlazingAdrian\\Desktop\\Donaton Plus\\Donaton_3.0\\Donaton.API\\Donaton.API.csproj",
+      "projectPath": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Donaton.API.csproj",
       "packagesPath": "C:\\Users\\BlazingAdrian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BlazingAdrian\\Desktop\\Donaton Plus\\Donaton_3.0\\Donaton.API\\obj\\",
+      "outputPath": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

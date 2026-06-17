@@ -188,6 +188,32 @@
   },
   {
     "ContainingType": "Donaton.API.Controllers.CausesController",
+    "Method": "GetCause",
+    "RelativePath": "api/Causes/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Donaton.API.Models.Cause",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Donaton.API.Controllers.CausesController",
     "Method": "PutCause",
     "RelativePath": "api/Causes/{id}",
     "HttpMethod": "PUT",
