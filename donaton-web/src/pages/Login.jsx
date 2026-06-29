@@ -22,12 +22,29 @@ const Login = () => {
       // Si es exitoso, guardamos el "Gafete" (Token) en el almacenamiento del navegador
       localStorage.setItem('token', response.data.token);
       
+      // --- NUEVO: Guardamos el ID del usuario (y el correo/nombre si los devuelve la API) ---
+      // Verificamos cómo se llama la variable que manda tu backend (userId o id)
+      if (response.data.userId) {
+        localStorage.setItem('userId', response.data.userId);
+      } else if (response.data.id) {
+        localStorage.setItem('userId', response.data.id);
+      }
+
+      // Opcional: Si tu API devuelve el nombre o correo, también los guardamos para usarlos en Profile.jsx
+      if (response.data.email) {
+        localStorage.setItem('userEmail', response.data.email);
+      }
+
+      localStorage.setItem('userName', response.data.name);
+      // -------------------------------------------------------------------------------------
+
       // Redirigimos al usuario al panel o inicio (por ahora, al Home)
       navigate('/causas');
     } catch (err) {
       // Capturamos el error si las credenciales son incorrectas
       if (err.response && err.response.data) {
-        setError(err.response.data);
+        // En caso de que el backend envíe un error en formato texto
+        setError(typeof err.response.data === 'string' ? err.response.data : 'Credenciales incorrectas');
       } else {
         setError('Error al conectar con el servidor.');
       }

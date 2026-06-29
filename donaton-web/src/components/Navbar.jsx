@@ -62,6 +62,12 @@ const Navbar = () => {
                     Panel Admin
                   </Link>
                 )}
+                <Link 
+                  to="/perfil" 
+                  className="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors border border-gray-600 shadow-sm"
+                >
+                  Mi Perfil
+                </Link>
                 
                 <span className="text-green-400 text-sm hidden sm:flex items-center">
                   <span className="inline-block w-2 h-2 bg-green-500 rounded-full mr-2"></span>

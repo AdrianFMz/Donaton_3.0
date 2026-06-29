@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://localhost:5137/api' 
+    baseURL: 'https://localhost:7291/api' 
 });
 
 // NUEVO: Interceptor de Peticiones

@@ -1,34 +1,90 @@
-import { useState, useEffect } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useState, useEffect, useRef } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import api from '../services/api';
 
 const Home = () => {
   const [causes, setCauses] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  
+  // Nuevo estado para la notificación elegante (Toast)
+  const [toastMessage, setToastMessage] = useState('');
+
   const navigate = useNavigate();
+  const location = useLocation();
+  const hasProcessedPayment = useRef(false);
+
+  const fetchCauses = async () => {
+    try {
+      const response = await api.get('/Causes');
+      setCauses(response.data);
+      setLoading(false);
+    } catch (err) {
+      setError('Error al cargar las causas desde el servidor.');
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
-    const token = localStorage.getItem('token');
-    if (!token) {
-      navigate('/login');
-      return;
-    }
+    fetchCauses();
+  }, []);
 
-    const fetchCauses = async () => {
-      try {
-        const response = await api.get('/Causes');
+  useEffect(() => {
+    const processPayment = async () => {
+      const queryParams = new URLSearchParams(location.search);
+      const status = queryParams.get('status');
+      const payerId = queryParams.get('PayerID');
+      const causeId = queryParams.get('causeId');
+      const amount = queryParams.get('amount');
 
-        setCauses(response.data);
-        setLoading(false);
-      } catch (err) {
-        setError('Error al cargar las causas desde el servidor.');
-        setLoading(false);
+      if ((status === 'approved' || payerId) && causeId && amount && !hasProcessedPayment.current) {
+        
+        hasProcessedPayment.current = true;
+
+        try {
+          navigate('/causas', { replace: true });
+
+          const causeResponse = await api.get(`/Causes/${causeId}`);
+          const currentCause = causeResponse.data;
+          const updatedAmount = (currentCause.currentAmount || 0) + parseFloat(amount);
+
+          await api.put(`/Causes/${causeId}`, {
+            ...currentCause,
+            currentAmount: updatedAmount
+          });
+
+          // Leemos el ID del usuario real desde el navegador
+          const loggedInUserId = localStorage.getItem('userId');
+          
+          if (loggedInUserId) {
+            const method = payerId ? 'PayPal' : 'Mercado Pago';
+            
+            await api.post('/Donations', {
+              userId: parseInt(loggedInUserId), 
+              causeId: parseInt(causeId),
+              amount: parseFloat(amount),
+              donationDate: new Date().toISOString(),
+              paymentMethod: method,
+              status: 'Completed'
+            });
+          }
+
+          await fetchCauses();
+
+          // Activamos la notificación elegante en lugar del alert()
+          setToastMessage('¡Gracias! Tu donativo ha sido procesado exitosamente.');
+          setTimeout(() => {
+            setToastMessage('');
+          }, 4000); // Desaparece después de 4 segundos
+          
+        } catch (error) {
+          console.error("Error al registrar el pago en la base de datos:", error);
+        }
       }
     };
 
-    fetchCauses();
-  }, [navigate]);
+    processPayment();
+  }, [location.search, navigate]);
 
   if (loading) {
     return (
@@ -49,7 +105,16 @@ const Home = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gray-900 text-gray-100 py-12 px-4 sm:px-6 lg:px-8 relative">
+      
+      {/* NOTIFICACIÓN FLOTANTE (TOAST) */}
+      {toastMessage && (
+        <div className="fixed bottom-8 right-8 bg-gray-800 border-l-4 border-blue-500 text-white px-6 py-4 rounded shadow-2xl z-50 animate-bounce flex items-center gap-3">
+          <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <span className="font-medium">{toastMessage}</span>
+        </div>
+      )}
+
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-extrabold text-center text-white mb-12">
           Causas Activas

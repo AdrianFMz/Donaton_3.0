@@ -3,16 +3,21 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import api from '../services/api';
 
 const CauseDetail = () => {
-  const { id } = useParams(); // Obtenemos el ID desde la URL
+  const { id } = useParams();
   const navigate = useNavigate();
   const [cause, setCause] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
+  // Estados para el Modal de Donación
+  const [showModal, setShowModal] = useState(false);
+  const [donationAmount, setDonationAmount] = useState('');
+  const [isProcessing, setIsProcessing] = useState(false);
+  const [paymentMethod, setPaymentMethod] = useState('mercadopago');
+
   useEffect(() => {
     const fetchCauseDetail = async () => {
       try {
-        // Pedimos la causa específica usando el endpoint GET /api/Causes/{id}
         const response = await api.get(`/Causes/${id}`);
         setCause(response.data);
         setLoading(false);
@@ -24,6 +29,38 @@ const CauseDetail = () => {
 
     fetchCauseDetail();
   }, [id]);
+
+  // Función que genera la orden de pago real en Mercado Pago
+const handleDonate = async (e) => {
+    e.preventDefault();
+    setIsProcessing(true);
+
+    try {
+      const amountToAdd = parseFloat(donationAmount);
+
+      // CAMBIO: Elegimos el endpoint basado en el radio button seleccionado
+      const endpoint = paymentMethod === 'mercadopago' 
+        ? '/Payments/mercadopago' 
+        : '/Payments/paypal';
+
+      const response = await api.post(endpoint, {
+        causeId: parseInt(id),
+        amount: amountToAdd
+      });
+
+      const { initPoint } = response.data;
+
+      if (initPoint) {
+        window.location.href = initPoint;
+      } else {
+        throw new Error('No se recibió el enlace de pago.');
+      }
+
+    } catch (err) {
+      alert('Hubo un error al conectar con la pasarela de pago. Intenta nuevamente.');
+      setIsProcessing(false);
+    }
+  };
 
   if (loading) {
     return (
@@ -46,15 +83,15 @@ const CauseDetail = () => {
     );
   }
 
-  const goal = cause.goalAmount ?? cause.AmountGoal ?? 0;
-  const current = cause.currentAmount ?? cause.CurrentAmount ?? 0;
-  // Matemáticas para la barra de progreso
-  const progress = cause.goalAmount > 0  /*Se marca como goal sepa pq*/
-    ? Math.min((cause.currentAmount / cause.goalAmount) * 100, 100) 
+  // Cálculos de progreso con tus variables correctas
+  const goal = cause.goalAmount ?? 0;
+  const current = cause.currentAmount ?? 0;
+  const progress = goal > 0 
+    ? Math.min((current / goal) * 100, 100) 
     : 0;
 
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-100 py-10 px-4 sm:px-6 lg:px-8 font-sans">
+    <div className="min-h-screen bg-gray-900 text-gray-100 py-10 px-4 sm:px-6 lg:px-8 font-sans relative">
       <div className="max-w-6xl mx-auto">
         
         {/* Botón de retroceso */}
@@ -66,16 +103,13 @@ const CauseDetail = () => {
           Volver al listado
         </button>
 
-        {/* Título Principal */}
         <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-8 leading-tight">
           {cause.title}
         </h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           
-          {/* Columna Izquierda: Galería e Historia (Ocupa 2/3 del espacio) */}
           <div className="lg:col-span-2 space-y-8">
-            {/* Imagen Principal Destacada */}
             <div className="w-full h-96 md:h-[500px] bg-gray-800 rounded-2xl overflow-hidden border border-gray-700 shadow-xl relative">
               {cause.imageUrl ? (
                 <img src={cause.imageUrl} alt={cause.title} className="w-full h-full object-cover" />
@@ -84,13 +118,11 @@ const CauseDetail = () => {
                   <span className="text-lg">Imagen representativa de la causa</span>
                 </div>
               )}
-              {/* Etiqueta flotante */}
               <div className="absolute top-4 left-4 bg-blue-600 text-white text-sm font-bold px-4 py-2 rounded-full shadow-lg">
                 Causa Verificada
               </div>
             </div>
 
-            {/* Pestañas / Secciones de contenido */}
             <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 shadow-lg">
               <h2 className="text-2xl font-bold text-white mb-6 border-b border-gray-700 pb-4">
                 La Historia y el Objetivo
@@ -98,22 +130,12 @@ const CauseDetail = () => {
               <div className="prose prose-invert max-w-none text-gray-300 text-lg leading-relaxed whitespace-pre-line">
                 {cause.description}
               </div>
-              
-              {/* Sección de Galería Simulada para dar estructura visual */}
-              <h3 className="text-xl font-bold text-white mt-10 mb-4">Evidencias y Galería</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                <div className="h-32 bg-gray-700 rounded-lg flex items-center justify-center text-gray-500 border border-gray-600 border-dashed">Foto 1</div>
-                <div className="h-32 bg-gray-700 rounded-lg flex items-center justify-center text-gray-500 border border-gray-600 border-dashed">Foto 2</div>
-                <div className="h-32 bg-gray-700 rounded-lg flex items-center justify-center text-gray-500 border border-gray-600 border-dashed">Foto 3</div>
-              </div>
             </div>
           </div>
 
-          {/* Columna Derecha: Tarjeta de Donación (Sticky) */}
           <div className="lg:col-span-1">
             <div className="bg-gray-800 rounded-2xl p-6 border border-gray-700 shadow-xl sticky top-24">
               
-              {/* Resumen de Progreso Actualizado */}
               <div className="mb-6">
                 <div className="flex items-end gap-2 mb-2">
                   <span className="text-4xl font-extrabold text-white">${current}</span>
@@ -123,7 +145,6 @@ const CauseDetail = () => {
                   Meta total: <span className="text-white font-semibold">${goal}</span>
                 </div>
                 
-                {/* Barra de progreso */}
                 <div className="w-full bg-gray-700 rounded-full h-3 mb-2">
                   <div 
                     className="bg-blue-500 h-3 rounded-full transition-all duration-1000 ease-out relative overflow-hidden" 
@@ -137,23 +158,101 @@ const CauseDetail = () => {
                 </div>
               </div>
 
-              {/* Muro de confianza */}
               <div className="flex items-center gap-3 text-sm text-gray-300 mb-8 p-4 bg-gray-900 rounded-lg border border-gray-700">
                 <svg className="w-6 h-6 text-green-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.956 11.956 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                 <p>Tu donativo está protegido y va directamente a la cuenta verificada del proyecto.</p>
               </div>
 
-              {/* Botón de Acción Principal */}
-              <button className="w-full bg-blue-600 hover:bg-blue-500 text-white font-extrabold py-4 px-4 rounded-xl transition-all duration-300 shadow-lg shadow-blue-500/25 transform hover:-translate-y-1 text-lg flex justify-center items-center gap-2">
+              {/* Botón que abre el Modal en lugar de donar directamente */}
+              <button 
+                onClick={() => setShowModal(true)}
+                className="w-full bg-blue-600 hover:bg-blue-500 text-white font-extrabold py-4 px-4 rounded-xl transition-all duration-300 shadow-lg shadow-blue-500/25 transform hover:-translate-y-1 text-lg flex justify-center items-center gap-2"
+              >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
                 Hacer mi Donativo
               </button>
-
             </div>
           </div>
-
         </div>
       </div>
+
+      {/* OVERLAY Y MODAL DE PAGO */}
+      {showModal && (
+        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+          <div className="bg-gray-800 rounded-2xl w-full max-w-md border border-gray-700 shadow-2xl overflow-hidden transform transition-all">
+            
+            <div className="p-6 border-b border-gray-700 flex justify-between items-center">
+              <h3 className="text-xl font-bold text-white">Aportar a esta causa</h3>
+              <button onClick={() => setShowModal(false)} className="text-gray-400 hover:text-white transition-colors">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+              </button>
+            </div>
+
+            <form onSubmit={handleDonate} className="p-6 space-y-6">
+              <div>
+                <label className="block text-sm font-medium text-gray-300 mb-2">Cantidad a donar (MXN)</label>
+                <div className="relative">
+                  <span className="absolute inset-y-0 left-0 flex items-center pl-4 text-gray-400 text-lg">$</span>
+                  <input
+                    type="number"
+                    min="1"
+                    step="1"
+                    value={donationAmount}
+                    onChange={(e) => setDonationAmount(e.target.value)}
+                    className="w-full pl-8 pr-4 py-3 rounded-lg bg-gray-900 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 text-lg font-semibold"
+                    placeholder="500"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="bg-gray-900/50 p-4 rounded-lg border border-gray-700">
+                <p className="text-sm text-gray-400 mb-3 font-medium">Método de pago</p>
+                <div className="flex gap-3">
+                  {/* Radio Mercado Pago */}
+                  <label className="flex-1 cursor-pointer">
+                    <input 
+                      type="radio" 
+                      name="payment" 
+                      value="mercadopago"
+                      checked={paymentMethod === 'mercadopago'}
+                      onChange={(e) => setPaymentMethod(e.target.value)}
+                      className="peer sr-only" 
+                    />
+                    <div className="text-center p-3 rounded-lg border border-gray-600 peer-checked:border-blue-500 peer-checked:bg-blue-500/10 text-gray-300 transition-all font-semibold">
+                      Mercado Pago
+                    </div>
+                  </label>
+                  
+                  {/* Radio PayPal */}
+                  <label className="flex-1 cursor-pointer">
+                    <input 
+                      type="radio" 
+                      name="payment" 
+                      value="paypal"
+                      checked={paymentMethod === 'paypal'}
+                      onChange={(e) => setPaymentMethod(e.target.value)}
+                      className="peer sr-only" 
+                    />
+                    <div className="text-center p-3 rounded-lg border border-gray-600 peer-checked:border-blue-500 peer-checked:bg-blue-500/10 text-gray-300 transition-all font-semibold">
+                      PayPal
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                disabled={isProcessing}
+                className="w-full bg-blue-600 hover:bg-blue-500 disabled:bg-gray-600 text-white font-bold py-3 px-4 rounded-lg transition-colors flex justify-center items-center"
+              >
+                {isProcessing ? 'Procesando pago...' : `Confirmar donativo de $${donationAmount || '0'}`}
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
+
     </div>
   );
 };

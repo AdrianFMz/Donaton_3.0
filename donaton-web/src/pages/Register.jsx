@@ -3,6 +3,8 @@ import { useNavigate, Link } from 'react-router-dom';
 import api from '../services/api';
 
 const Register = () => {
+  // 1. Agregamos el estado para el nombre de usuario
+  const [username, setUsername] = useState(''); 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -22,18 +24,17 @@ const Register = () => {
     setIsLoading(true);
 
     try {
-      // Hacemos la petición a tu API para registrar al usuario
+      // 2. Incluimos el username en la petición a tu API
       await api.post('/Auth/register', {
+        username: username, // <-- ¡Aquí mandamos el nombre!
         email: email,
         password: password
       });
 
-      // Si es exitoso, lo mandamos al login para que inicie sesión
       alert('¡Cuenta creada exitosamente! Por favor, inicia sesión.');
       navigate('/login');
     } catch (err) {
       if (err.response && err.response.data) {
-        // Mostramos el error del backend (ej. "El correo ya existe")
         setError(typeof err.response.data === 'string' ? err.response.data : 'Error al registrar usuario.');
       } else {
         setError('Error al conectar con el servidor.');
@@ -57,6 +58,20 @@ const Register = () => {
         )}
 
         <form onSubmit={handleRegister} className="space-y-6">
+          
+          {/* 3. NUEVO CAMPO: Nombre / Usuario */}
+          <div>
+            <label className="block text-sm font-medium text-gray-300 mb-2">Nombre / Usuario</label>
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              className="w-full px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+              placeholder="Ej. Juan Pérez"
+              required
+            />
+          </div>
+
           <div>
             <label className="block text-sm font-medium text-gray-300 mb-2">Correo Electrónico</label>
             <input
