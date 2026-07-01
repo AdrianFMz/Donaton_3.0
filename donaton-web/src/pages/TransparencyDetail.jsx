@@ -70,7 +70,7 @@ const TransparencyDetail = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
           <div className="md:col-span-2">
             <img 
-              src={`https://localhost:7291${evidenceImg}`} 
+              src={`https://donaton-api.onrender.com${evidenceImg}`} 
               alt="Evidencia principal" 
               className="w-full h-80 object-cover rounded-2xl border border-gray-700 shadow-xl bg-gray-900 animate-fade-in"
             />
@@ -127,7 +127,7 @@ const TransparencyDetail = () => {
               {extraImages.map((img) => (
                 <div key={img.id || img.Id} className="h-40 bg-gray-900 rounded-xl overflow-hidden border border-gray-700 shadow-md group relative">
                   <img 
-                    src={`https://localhost:7291${img.imageUrl || img.ImageUrl}`} 
+                    src={`https://donaton-api.onrender.com${img.imageUrl || img.ImageUrl}`} 
                     alt="Evidencia de campo" 
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" 
                   />

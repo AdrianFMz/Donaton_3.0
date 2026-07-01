@@ -44,7 +44,7 @@ const Blog = () => {
               <div key={report.id} className="bg-gray-800 rounded-2xl p-6 border border-gray-700 shadow-xl flex flex-col md:flex-row gap-6 items-start hover:border-gray-600 transition-all">
                 
                 <img 
-                  src={`https://localhost:7291${report.evidenceImageUrl || report.EvidenceImageUrl}`} 
+                  src={`https://donaton-api.onrender.com${report.evidenceImageUrl || report.EvidenceImageUrl}`} 
                   alt="Evidencia principal" 
                   className="w-full md:w-56 h-44 object-cover rounded-xl border border-gray-700 shadow-inner bg-gray-900" 
                 />

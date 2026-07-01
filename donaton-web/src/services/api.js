@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://localhost:7291/api' 
+    baseURL: 'https://donaton-api.onrender.com/api' 
 });
 
 // NUEVO: Interceptor de Peticiones
