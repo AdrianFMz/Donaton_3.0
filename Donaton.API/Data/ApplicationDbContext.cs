@@ -22,5 +22,10 @@ namespace Donaton.API.Data
 
         // Nueva tabla para el registro de transacciones
         public DbSet<Donation> Donations { get; set; }
+
+        public DbSet<CauseImage> CauseImages { get; set; }
+        public DbSet<TransparencyReport> TransparencyReports { get; set; }
+
+        public DbSet<TransparencyImage> TransparencyImages { get; set; }
     }
 }

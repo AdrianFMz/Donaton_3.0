@@ -85,6 +85,26 @@ namespace Donaton.API.Migrations
                     b.ToTable("Causes");
                 });
 
+            modelBuilder.Entity("Donaton.API.Models.CauseImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CauseId")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CauseImages");
+                });
+
             modelBuilder.Entity("Donaton.API.Models.Donation", b =>
                 {
                     b.Property<int>("Id")
@@ -115,7 +135,74 @@ namespace Donaton.API.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CauseId");
+
                     b.ToTable("Donations");
+                });
+
+            modelBuilder.Entity("Donaton.API.Models.TransparencyImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ImageUrl")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("TransparencyReportId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TransparencyReportId");
+
+                    b.ToTable("TransparencyImages");
+                });
+
+            modelBuilder.Entity("Donaton.API.Models.TransparencyReport", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Actions")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<decimal>("AmountSpent")
+                        .HasColumnType("numeric");
+
+                    b.Property<string>("Beneficiaries")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("CauseId")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("EvidenceImageUrl")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("ReportDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("character varying(150)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TransparencyReports");
                 });
 
             modelBuilder.Entity("Donaton.API.Models.User", b =>
@@ -148,6 +235,33 @@ namespace Donaton.API.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("Donaton.API.Models.Donation", b =>
+                {
+                    b.HasOne("Donaton.API.Models.Cause", "Cause")
+                        .WithMany()
+                        .HasForeignKey("CauseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Cause");
+                });
+
+            modelBuilder.Entity("Donaton.API.Models.TransparencyImage", b =>
+                {
+                    b.HasOne("Donaton.API.Models.TransparencyReport", "TransparencyReport")
+                        .WithMany("ExtraImages")
+                        .HasForeignKey("TransparencyReportId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("TransparencyReport");
+                });
+
+            modelBuilder.Entity("Donaton.API.Models.TransparencyReport", b =>
+                {
+                    b.Navigation("ExtraImages");
                 });
 #pragma warning restore 612, 618
         }

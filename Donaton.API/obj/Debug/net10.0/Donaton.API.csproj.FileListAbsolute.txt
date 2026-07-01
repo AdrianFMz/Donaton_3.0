@@ -144,6 +144,7 @@ C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net
 C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net10.0\Donaton.API.pdb
 C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net10.0\BCrypt-Net-Next.dll
 C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net10.0\Humanizer.dll
+C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net10.0\MercadoPago.dll
 C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net10.0\Microsoft.Build.Framework.dll
@@ -170,6 +171,8 @@ C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net
 C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net10.0\Newtonsoft.Json.dll
 C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net10.0\Npgsql.dll
 C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net10.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net10.0\PayPalCheckoutSdk.dll
+C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net10.0\PayPalHttp-Dotnet.dll
 C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -179,7 +182,9 @@ C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net
 C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net10.0\System.Composition.Hosting.dll
 C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net10.0\System.Composition.Runtime.dll
 C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net10.0\System.Composition.TypedParts.dll
+C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net10.0\System.Configuration.ConfigurationManager.dll
 C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net10.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -270,3 +275,4 @@ C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\obj\Debug\net
 C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\obj\Debug\net10.0\Donaton.API.pdb
 C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\obj\Debug\net10.0\Donaton.API.genruntimeconfig.cache
 C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\obj\Debug\net10.0\ref\Donaton.API.dll
+C:\Users\BlazingAdrian\Desktop\DonatonPlus\Donaton_3.0\Donaton.API\bin\Debug\net10.0\Donaton.API.staticwebassets.runtime.json

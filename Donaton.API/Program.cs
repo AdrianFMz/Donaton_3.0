@@ -37,12 +37,13 @@ builder.Services.AddSwaggerGen();
 // ---> NUEVO: Configuración de CORS <---
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("PermitirNuestraWeb", policy =>
-    {
-        policy.WithOrigins("http://localhost:3000", "http://localhost:5173") // Puertos por defecto de React y Vite
-              .AllowAnyHeader()
-              .AllowAnyMethod();
-    });
+    options.AddPolicy("AllowWebApp",
+        policy =>
+        {
+            policy.AllowAnyOrigin()
+                  .AllowAnyMethod()
+                  .AllowAnyHeader();
+        });
 });
 
 var app = builder.Build();
@@ -56,9 +57,11 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseRouting();
 // ---> NUEVO: Activar CORS (Debe ir estrictamente aquí) <---
-app.UseCors("PermitirNuestraWeb");
+app.UseCors("AllowWebApp");
 
+app.UseStaticFiles();
 // Seguridad activa
 app.UseAuthentication();
 app.UseAuthorization();

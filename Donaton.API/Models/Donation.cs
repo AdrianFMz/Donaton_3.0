@@ -21,5 +21,7 @@
 
         // Estado de la transacción (Ej: "Completed", "Pending", "Failed")
         public string Status { get; set; } = "Completed";
+
+        public Cause? Cause { get; set; }
     }
 }

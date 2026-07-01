@@ -9,6 +9,7 @@ import Admin from './pages/Admin';
 import Register from './pages/Register';
 import Profile from './pages/Profile';
 import ProtectedRoute from './components/ProtectedRoute'; // <-- IMPORTAMOS EL GUARDIA
+import TransparencyDetail from './pages/TransparencyDetail';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />}/>
         <Route path="/blog" element={<Blog />} /> {/* Transparencia es pública */}
+        <Route path="/blog/:id" element={<TransparencyDetail />} /> {/* <-- NUEVA RUTA */}
 
         {/* ==========================================
             2. RUTAS PROTEGIDAS (Requieren inicio de sesión)

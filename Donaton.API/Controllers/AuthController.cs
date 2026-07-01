@@ -67,7 +67,14 @@ namespace Donaton.API.Controllers
             string token = CreateToken(user);
 
             // Devolvemos el token al cliente (React / MAUI)
-            return Ok(new { Token = token, Message = "Login exitoso." });
+            return Ok(new
+            {
+                token = token,
+                userId = user.Id,
+                email = user.Email,
+                name = user.Username, // Mandamos el nombre para usarlo en el perfil
+                message = "Login exitoso."
+            });
         }
 
         // Método privado encargado de fabricar el JWT
