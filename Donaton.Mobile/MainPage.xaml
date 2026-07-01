@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Donaton.Mobile.MainPage"
+             BackgroundColor="#111827">
+    <!-- Fondo oscuro (gray-900) -->
+
+    <Grid RowDefinitions="Auto,*">
+
+        <!-- Encabezado -->
+        <VerticalStackLayout Grid.Row="0" Margin="0,30,0,10">
+            <Label Text="Donaton Plus" 
+                   TextColor="White" 
+                   FontSize="32" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center" />
+            <Label Text="Causas activas buscando tu apoyo" 
+                   TextColor="#9CA3AF" 
+                   FontSize="14" 
+                   HorizontalOptions="Center" />
+        </VerticalStackLayout>
+
+        <!-- Lista de Tarjetas Dinámica -->
+        <CollectionView x:Name="CausesCollectionView" Grid.Row="1" Margin="20,10,20,0">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+
+                    <!-- Diseño de la Tarjeta (Equivalente al div rounded-xl bg-gray-800) -->
+                    <Frame BackgroundColor="#1F2937" 
+                           BorderColor="#374151" 
+                           CornerRadius="15" 
+                           Margin="0,0,0,20" 
+                           Padding="0" 
+                           IsClippedToBounds="True" 
+                           HasShadow="True">
+
+                        <VerticalStackLayout>
+                            <!-- Imagen Portada -->
+                            <Image Source="{Binding ImageUrl}" 
+                                   Aspect="AspectFill" 
+                                   HeightRequest="180" />
+
+                            <!-- Contenido de texto -->
+                            <VerticalStackLayout Padding="20" Spacing="8">
+                                <Label Text="{Binding Title}" 
+                                       TextColor="White" 
+                                       FontSize="20" 
+                                       FontAttributes="Bold" />
+
+                                <Label Text="{Binding Description}" 
+                                       TextColor="#9CA3AF" 
+                                       MaxLines="2" 
+                                       LineBreakMode="TailTruncation" />
+
+                                <Grid ColumnDefinitions="*,*" Margin="0,10,0,0">
+                                    <VerticalStackLayout Grid.Column="0">
+                                        <Label Text="Meta de Recaudación" TextColor="#6B7280" FontSize="12" />
+                                        <!-- Ojo aquí: MAUI lee automáticamente tu propiedad goalAmount -->
+                                        <Label Text="{Binding GoalAmount, StringFormat='${0:N2}'}" TextColor="#60A5FA" FontAttributes="Bold" FontSize="16"/>
+                                    </VerticalStackLayout>
+
+                                    <!-- Botón Donar -->
+                                    <Button Grid.Column="1" 
+                                            Text="Donar" 
+                                            BackgroundColor="#2563EB" 
+                                            TextColor="White"
+                                            CornerRadius="8"
+                                            HeightRequest="40"
+                                            FontAttributes="Bold"/>
+                                </Grid>
+                            </VerticalStackLayout>
+                        </VerticalStackLayout>
+                    </Frame>
+
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+
+</ContentPage>

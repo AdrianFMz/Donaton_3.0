@@ -1,0 +1,10 @@
+<api type="debug" assembly-name="Donaton.Mobile" mvid="4cb7f711e2eb40c8a86b1d80fb0b0d2e">
+  <java-to-managed>
+    <entry java-name="crc64507bc9ee3e4992f2/MainActivity" managed-name="Donaton.Mobile.MainActivity, Donaton.Mobile" managed-type-token-id="33554442" />
+    <entry java-name="crc64507bc9ee3e4992f2/MainApplication" managed-name="Donaton.Mobile.MainApplication, Donaton.Mobile" managed-type-token-id="33554443" />
+  </java-to-managed>
+  <managed-to-java>
+    <entry java-name="crc64507bc9ee3e4992f2/MainActivity" managed-name="Donaton.Mobile.MainActivity, Donaton.Mobile" managed-type-token-id="33554442" />
+    <entry java-name="crc64507bc9ee3e4992f2/MainApplication" managed-name="Donaton.Mobile.MainApplication, Donaton.Mobile" managed-type-token-id="33554443" />
+  </managed-to-java>
+</api>

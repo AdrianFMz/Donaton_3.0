@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Donaton.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ea5a9e275e7c1695347eb3976c86f224340dc33")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9808e3806bd1380f482a021b95f10edfe016d836")]
 [assembly: System.Reflection.AssemblyProductAttribute("Donaton.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Donaton.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
