@@ -1,11 +1,11 @@
 # Etapa 1: Entorno de ejecución (Runtime)
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS base
 WORKDIR /app
 EXPOSE 8080
 EXPOSE 8081
 
 # Etapa 2: Entorno de compilación (SDK)
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /src
 
 # Copiamos el archivo de proyecto y restauramos las dependencias de NuGet

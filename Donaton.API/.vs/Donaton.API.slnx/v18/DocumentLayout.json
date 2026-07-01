@@ -112,7 +112,7 @@
               "RelativeDocumentMoniker": "Dockerfile",
               "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Dockerfile",
               "RelativeToolTip": "Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswBoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-07-01T07:06:17.693Z",
               "EditorCaption": ""
@@ -139,8 +139,7 @@
               "RelativeToolTip": "Controllers\\TransparencyReportsController.cs",
               "ViewState": "AgIAAEAAAAAAAAAAAAAYwFYAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-29T03:46:47.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-29T03:46:47.486Z"
             },
             {
               "$type": "Document",
@@ -212,8 +211,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAADJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-06-28T23:12:41.013Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-28T23:12:41.013Z"
             },
             {
               "$type": "Document",
