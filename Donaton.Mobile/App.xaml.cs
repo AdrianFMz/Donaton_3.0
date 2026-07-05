@@ -4,14 +4,12 @@ namespace Donaton.Mobile
 {
     public partial class App : Application
     {
-        public App()
+        public App(LoginPage loginPage)
         {
             InitializeComponent();
-        }
 
-        protected override Window CreateWindow(IActivationState? activationState)
-        {
-            return new Window(new AppShell());
+            // Forzamos a que la app inicie en la pantalla de Login
+            MainPage = new NavigationPage(loginPage);
         }
     }
 }

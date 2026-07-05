@@ -3,96 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:controllers\\paymentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\controllers\\donationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:controllers\\donationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\controllers\\transparencyreportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:controllers\\transparencyreportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\models\\transparencyimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:models\\transparencyimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\models\\transparencyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:models\\transparencyreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\controllers\\causeimagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:controllers\\causeimagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\models\\transparencyimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:models\\transparencyimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\controllers\\uploadscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:controllers\\uploadscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\controllers\\transparencyreportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:controllers\\transparencyreportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\models\\causeimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:models\\causeimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\controllers\\donationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:controllers\\donationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\dtos\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:dtos\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\models\\donation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:models\\donation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\controllers\\causescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:controllers\\causescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\migrations\\20260617183232_adddonationstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:migrations\\20260617183232_adddonationstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\migrations\\20260617182630_addblogtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:migrations\\20260617182630_addblogtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\models\\blogarticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:models\\blogarticle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\migrations\\20260629032722_addgalleriesandtransparency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:migrations\\20260629032722_addgalleriesandtransparency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\migrations\\20260701050441_addtransparencydeepdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:migrations\\20260701050441_addtransparencydeepdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2B3CFD58-F0E7-D068-0305-BB8992C356A6}|Donaton.API.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -102,117 +42,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Dockerfile",
-              "RelativeDocumentMoniker": "Dockerfile",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Dockerfile",
-              "RelativeToolTip": "Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAswBoAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-07-01T07:06:17.693Z",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T02:40:00.717Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UploadsController.cs",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Controllers\\UploadsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UploadsController.cs",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Controllers\\UploadsController.cs",
-              "RelativeToolTip": "Controllers\\UploadsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-29T03:33:30.255Z"
+              "WhenOpened": "2026-07-05T02:38:55.17Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "TransparencyReport.cs",
               "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Models\\TransparencyReport.cs",
               "RelativeDocumentMoniker": "Models\\TransparencyReport.cs",
               "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Models\\TransparencyReport.cs",
               "RelativeToolTip": "Models\\TransparencyReport.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAwwCMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwCQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-29T03:24:06.535Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CauseImage.cs",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Models\\CauseImage.cs",
-              "RelativeDocumentMoniker": "Models\\CauseImage.cs",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Models\\CauseImage.cs",
-              "RelativeToolTip": "Models\\CauseImage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-29T03:23:34.923Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UserRegisterDto.cs",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\DTOs\\UserRegisterDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\UserRegisterDto.cs",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\DTOs\\UserRegisterDto.cs",
-              "RelativeToolTip": "DTOs\\UserRegisterDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-29T03:04:43.412Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwCYAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-28T23:21:54.739Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAADJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-06-28T23:12:41.013Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DonationsController.cs",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Controllers\\DonationsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DonationsController.cs",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Controllers\\DonationsController.cs",
-              "RelativeToolTip": "Controllers\\DonationsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T18:34:27.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PaymentsController.cs",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Controllers\\PaymentsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PaymentsController.cs",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Controllers\\PaymentsController.cs",
-              "RelativeToolTip": "Controllers\\PaymentsController.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAqwDQAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-28T23:21:25.913Z",
+              "WhenOpened": "2026-07-05T02:32:25.463Z",
               "EditorCaption": ""
             },
             {
@@ -223,165 +91,61 @@
               "RelativeDocumentMoniker": "Controllers\\TransparencyReportsController.cs",
               "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Controllers\\TransparencyReportsController.cs",
               "RelativeToolTip": "Controllers\\TransparencyReportsController.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAYwFYAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAIwFoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-29T03:46:47.486Z"
+              "WhenOpened": "2026-07-05T02:32:18.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DonationsController.cs",
+              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Controllers\\DonationsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DonationsController.cs",
+              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Controllers\\DonationsController.cs",
+              "RelativeToolTip": "Controllers\\DonationsController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAuwEgAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T01:26:12.454Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-05T00:39:19.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswBoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-07-01T07:06:17.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "TransparencyImage.cs",
               "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Models\\TransparencyImage.cs",
               "RelativeDocumentMoniker": "Models\\TransparencyImage.cs",
               "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Models\\TransparencyImage.cs",
               "RelativeToolTip": "Models\\TransparencyImage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T05:03:51.349Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "20260701050441_AddTransparencyDeepDetails.cs",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Migrations\\20260701050441_AddTransparencyDeepDetails.cs",
-              "RelativeDocumentMoniker": "Migrations\\20260701050441_AddTransparencyDeepDetails.cs",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Migrations\\20260701050441_AddTransparencyDeepDetails.cs",
-              "RelativeToolTip": "Migrations\\20260701050441_AddTransparencyDeepDetails.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T05:04:42.068Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAIwBwAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T18:25:50.863Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CauseImagesController.cs",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Controllers\\CauseImagesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CauseImagesController.cs",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Controllers\\CauseImagesController.cs",
-              "RelativeToolTip": "Controllers\\CauseImagesController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBoAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-29T03:47:21.121Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAEEAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T18:04:14.029Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "20260629032722_AddGalleriesAndTransparency.cs",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Migrations\\20260629032722_AddGalleriesAndTransparency.cs",
-              "RelativeDocumentMoniker": "Migrations\\20260629032722_AddGalleriesAndTransparency.cs",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Migrations\\20260629032722_AddGalleriesAndTransparency.cs",
-              "RelativeToolTip": "Migrations\\20260629032722_AddGalleriesAndTransparency.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-29T03:27:22.327Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Donation.cs",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Models\\Donation.cs",
-              "RelativeDocumentMoniker": "Models\\Donation.cs",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Models\\Donation.cs",
-              "RelativeToolTip": "Models\\Donation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T18:31:25.458Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-06-28T23:50:50.333Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "BlogController.cs",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Controllers\\BlogController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BlogController.cs",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Controllers\\BlogController.cs",
-              "RelativeToolTip": "Controllers\\BlogController.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAqwG0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T18:27:30.843Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "20260617182630_AddBlogTable.cs",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Migrations\\20260617182630_AddBlogTable.cs",
-              "RelativeDocumentMoniker": "Migrations\\20260617182630_AddBlogTable.cs",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Migrations\\20260617182630_AddBlogTable.cs",
-              "RelativeToolTip": "Migrations\\20260617182630_AddBlogTable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T18:26:31.542Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "BlogArticle.cs",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Models\\BlogArticle.cs",
-              "RelativeDocumentMoniker": "Models\\BlogArticle.cs",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Models\\BlogArticle.cs",
-              "RelativeToolTip": "Models\\BlogArticle.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T18:25:34.282Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CausesController.cs",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Controllers\\CausesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CausesController.cs",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Controllers\\CausesController.cs",
-              "RelativeToolTip": "Controllers\\CausesController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAUwCoAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T17:13:43.227Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "20260617183232_AddDonationsTable.cs",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Migrations\\20260617183232_AddDonationsTable.cs",
-              "RelativeDocumentMoniker": "Migrations\\20260617183232_AddDonationsTable.cs",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.API\\Migrations\\20260617183232_AddDonationsTable.cs",
-              "RelativeToolTip": "Migrations\\20260617183232_AddDonationsTable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T18:32:32.911Z"
+              "WhenOpened": "2026-07-01T05:03:51.349Z",
+              "EditorCaption": ""
             }
           ]
         }

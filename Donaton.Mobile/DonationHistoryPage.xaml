@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Donaton.Mobile.DonationHistoryPage"
+             Title="Mi Historial"
+             BackgroundColor="#111827">
+
+    <Grid RowDefinitions="Auto, *">
+        <Label Grid.Row="0" Text="Tus aportaciones" TextColor="White" FontSize="24" FontAttributes="Bold" Margin="20" />
+
+        <CollectionView Grid.Row="1" x:Name="HistoryCollectionView" Margin="20,0">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BackgroundColor="#1F2937" BorderColor="#374151" CornerRadius="10" Padding="15" Margin="0,0,0,15" HasShadow="False">
+                        <Grid ColumnDefinitions="*, Auto" RowDefinitions="Auto, Auto">
+                            <!-- Fecha -->
+                            <Label Grid.Row="0" Grid.Column="0" Text="{Binding DonationDate, StringFormat='{0:dd MMM yyyy}'}" TextColor="#9CA3AF" FontSize="12" />
+                            <!-- Monto -->
+                            <Label Grid.Row="0" Grid.Column="1" Text="{Binding Amount, StringFormat='${0:N2}'}" TextColor="#34D399" FontAttributes="Bold" FontSize="16" />
+                            <!-- Nombre de la causa -->
+                            <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding Cause.Title}" TextColor="White" FontSize="16" Margin="0,5,0,0" />
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+            <CollectionView.EmptyView>
+                <Label Text="Aún no tienes donaciones registradas." TextColor="#6B7280" HorizontalOptions="Center" VerticalOptions="Center" />
+            </CollectionView.EmptyView>
+        </CollectionView>
+    </Grid>
+</ContentPage>

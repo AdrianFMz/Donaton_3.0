@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Donaton.Mobile.RegisterPage"
+             BackgroundColor="#111827"
+             Title="Crear Cuenta">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="20" Margin="0,20,0,0">
+
+            <Label Text="Únete a la comunidad" TextColor="White" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,0,0,20" />
+
+            <Frame BackgroundColor="#1F2937" BorderColor="#374151" CornerRadius="10" Padding="0" HasShadow="False">
+                <Entry x:Name="NameEntry" Placeholder="Nombre Completo" TextColor="White" PlaceholderColor="#6B7280" BackgroundColor="Transparent" Margin="15,5" />
+            </Frame>
+
+            <Frame BackgroundColor="#1F2937" BorderColor="#374151" CornerRadius="10" Padding="0" HasShadow="False">
+                <Entry x:Name="EmailEntry" Placeholder="Correo Electrónico" Keyboard="Email" TextColor="White" PlaceholderColor="#6B7280" BackgroundColor="Transparent" Margin="15,5" />
+            </Frame>
+
+            <Frame BackgroundColor="#1F2937" BorderColor="#374151" CornerRadius="10" Padding="0" HasShadow="False">
+                <Entry x:Name="PasswordEntry" Placeholder="Contraseña" IsPassword="True" TextColor="White" PlaceholderColor="#6B7280" BackgroundColor="Transparent" Margin="15,5" />
+            </Frame>
+
+            <Button Text="Crear mi cuenta" BackgroundColor="#10B981" TextColor="White" FontAttributes="Bold" CornerRadius="8" HeightRequest="50" Margin="0,20,0,0" Clicked="OnRegisterClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -4,6 +4,10 @@
              x:Class="Donaton.Mobile.MainPage"
              BackgroundColor="#111827">
     <!-- Fondo oscuro (gray-900) -->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Mi Historial" Clicked="OnHistorialClicked" />
+        <ToolbarItem Text="Transparencia" Clicked="OnTransparenciaClicked" />
+    </ContentPage.ToolbarItems>
 
     <Grid RowDefinitions="Auto,*">
 
@@ -66,7 +70,8 @@
                                             TextColor="White"
                                             CornerRadius="8"
                                             HeightRequest="40"
-                                            FontAttributes="Bold"/>
+                                            FontAttributes="Bold"
+                                            Clicked="OnDonarClicked" CommandParameter="{Binding .}"/>
                                 </Grid>
                             </VerticalStackLayout>
                         </VerticalStackLayout>

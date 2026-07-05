@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Donaton.Mobile.LoginPage"
+             BackgroundColor="#111827"
+             NavigationPage.HasNavigationBar="False">
+
+    <ScrollView>
+        <VerticalStackLayout VerticalOptions="Center" Padding="30" Spacing="20" Margin="0,50,0,0">
+
+            <Label Text="Donaton Plus" TextColor="White" FontSize="36" FontAttributes="Bold" HorizontalOptions="Center" />
+            <Label Text="Inicia sesión para cambiar el mundo" TextColor="#9CA3AF" FontSize="14" HorizontalOptions="Center" Margin="0,0,0,20" />
+
+            <Frame BackgroundColor="#1F2937" BorderColor="#374151" CornerRadius="10" Padding="0" HasShadow="False">
+                <Entry x:Name="EmailEntry" Placeholder="Correo Electrónico" Keyboard="Email" TextColor="White" PlaceholderColor="#6B7280" BackgroundColor="Transparent" Margin="15,5" />
+            </Frame>
+
+            <Frame BackgroundColor="#1F2937" BorderColor="#374151" CornerRadius="10" Padding="0" HasShadow="False">
+                <Entry x:Name="PasswordEntry" Placeholder="Contraseña" IsPassword="True" TextColor="White" PlaceholderColor="#6B7280" BackgroundColor="Transparent" Margin="15,5" />
+            </Frame>
+
+            <Button Text="Ingresar" BackgroundColor="#2563EB" TextColor="White" FontAttributes="Bold" CornerRadius="8" HeightRequest="50" Margin="0,10,0,0" Clicked="OnLoginClicked" />
+
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="5" Margin="0,20,0,0">
+                <Label Text="¿No tienes cuenta?" TextColor="#9CA3AF" />
+                <Label Text="Regístrate aquí" TextColor="#60A5FA" FontAttributes="Bold">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnGoToRegisterTapped" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Donaton.Mobile.CauseDetailPage"
+             Title="Detalle de Causa"
+             BackgroundColor="#111827">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <!-- Imagen Hero -->
+            <Image x:Name="HeroImage" Aspect="AspectFill" HeightRequest="250" />
+
+            <VerticalStackLayout Padding="20" Spacing="15">
+                <!-- Título -->
+                <Label x:Name="TitleLabel" TextColor="White" FontSize="26" FontAttributes="Bold" />
+
+                <!-- Progreso y Meta -->
+                <Frame BackgroundColor="#1F2937" BorderColor="#374151" CornerRadius="10" Padding="15" HasShadow="False">
+                    <Grid RowDefinitions="Auto,Auto" ColumnDefinitions="*,*">
+                        <Label Grid.Row="0" Grid.Column="0" Text="Meta Final" TextColor="#9CA3AF" FontSize="12" />
+                        <Label x:Name="GoalLabel" Grid.Row="1" Grid.Column="0" TextColor="#60A5FA" FontSize="20" FontAttributes="Bold" />
+
+                        <Label Grid.Row="0" Grid.Column="1" Text="Recaudado" TextColor="#9CA3AF" FontSize="12" HorizontalOptions="End" />
+                        <Label x:Name="CurrentLabel" Grid.Row="1" Grid.Column="1" TextColor="#34D399" FontSize="20" FontAttributes="Bold" HorizontalOptions="End" />
+                    </Grid>
+                </Frame>
+
+                <!-- Descripción -->
+                <Label Text="Acerca de esta causa" TextColor="White" FontSize="18" FontAttributes="Bold" Margin="0,10,0,0"/>
+                <Label x:Name="DescriptionLabel" TextColor="#D1D5DB" FontSize="15" LineHeight="1.4" />
+
+                <!-- Input para monto y Botones de Pago -->
+                <Frame BackgroundColor="#1F2937" BorderColor="#374151" CornerRadius="10" Padding="15" Margin="0,20,0,20">
+                    <VerticalStackLayout Spacing="15">
+                        <Label Text="¿Con cuánto deseas apoyar?" TextColor="White" FontAttributes="Bold" HorizontalOptions="Center"/>
+
+                        <Entry x:Name="MontoEntry" 
+                               Placeholder="Monto en MXN (Ej. 500)" 
+                               Keyboard="Numeric" 
+                               TextColor="White" 
+                               PlaceholderColor="#6B7280"
+                               BackgroundColor="#374151" 
+                               HorizontalTextAlignment="Center"/>
+
+                        <Grid ColumnDefinitions="*,*" ColumnSpacing="10">
+                            <!-- Botón Mercado Pago (Azul Claro) -->
+                            <Button Grid.Column="0"
+                                    x:Name="BtnMercadoPago"
+                                    Text="Mercado Pago" 
+                                    BackgroundColor="#009EE3" 
+                                    TextColor="White" 
+                                    FontAttributes="Bold" 
+                                    CornerRadius="8" 
+                                    Clicked="OnMercadoPagoClicked"/>
+
+                            <!-- Botón PayPal (Azul Oscuro/Dorado) -->
+                            <Button Grid.Column="1"
+                                    x:Name="BtnPayPal"
+                                    Text="PayPal" 
+                                    BackgroundColor="#003087" 
+                                    TextColor="White" 
+                                    FontAttributes="Bold" 
+                                    CornerRadius="8" 
+                                    Clicked="OnPayPalClicked"/>
+                        </Grid>
+                    </VerticalStackLayout>
+                </Frame>
+
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
