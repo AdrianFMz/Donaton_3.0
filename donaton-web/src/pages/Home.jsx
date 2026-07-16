@@ -86,6 +86,12 @@ const Home = () => {
     processPayment();
   }, [location.search, navigate]);
 
+  // --- NUEVA LÓGICA: Calcular totales para el Dashboard ---
+  const totalRaised = causes.reduce((sum, cause) => sum + (cause.currentAmount || 0), 0);
+  const activeCausesCount = causes.length;
+  // Opcional: Calcular el total de la meta de todas las causas
+  const totalGoal = causes.reduce((sum, cause) => sum + (cause.goalAmount || 0), 0);
+
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-900 flex items-center justify-center">
@@ -116,12 +122,44 @@ const Home = () => {
       )}
 
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-extrabold text-center text-white mb-12">
-          Causas Activas
-        </h1>
+        
+        {/* ==========================================
+            NUEVO: PANEL DASHBOARD SUPERIOR
+            ========================================== */}
+        <div className="bg-gray-800 rounded-2xl shadow-xl border border-gray-700 p-8 mb-12">
+            <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-6 text-center md:text-left">
+                Nuestro Impacto Global
+            </h1>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Métrica: Total Recaudado */}
+                <div className="bg-gray-900/50 rounded-xl p-6 border border-gray-700/50 flex flex-col justify-center items-center md:items-start">
+                    <span className="text-gray-400 font-semibold mb-2 uppercase tracking-wider text-sm">Total Recaudado</span>
+                    <span className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">
+                        ${totalRaised.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                    </span>
+                    <span className="text-gray-500 text-sm mt-2">De una meta global de ${totalGoal.toLocaleString()}</span>
+                </div>
+
+                {/* Métrica: Causas Activas */}
+                <div className="bg-gray-900/50 rounded-xl p-6 border border-gray-700/50 flex flex-col justify-center items-center md:items-start">
+                    <span className="text-gray-400 font-semibold mb-2 uppercase tracking-wider text-sm">Causas Activas</span>
+                    <span className="text-4xl md:text-5xl font-black text-white">
+                        {activeCausesCount}
+                    </span>
+                    <span className="text-gray-500 text-sm mt-2">Proyectos buscando apoyo</span>
+                </div>
+            </div>
+        </div>
+        {/* ========================================== */}
+
+        <h2 className="text-2xl font-bold text-white mb-8 border-b border-gray-700 pb-4">
+          Causas Disponibles para Apoyar
+        </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {causes.map((cause) => {
+            // Ya tenías esta línea perfecta para calcular el progreso
             const progress = cause.goalAmount > 0 
               ? Math.min((cause.currentAmount / cause.goalAmount) * 100, 100) 
               : 0;
@@ -134,7 +172,7 @@ const Home = () => {
                 <div className="h-48 w-full bg-gray-700 relative overflow-hidden group">
                   {cause.imageUrl ? (
                     <img 
-                      src={cause.imageUrl} 
+                      src={cause.imageUrl.startsWith('http') ? cause.imageUrl : `${import.meta.env.VITE_API_URL}${cause.imageUrl}`} 
                       alt={cause.title} 
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
@@ -154,12 +192,13 @@ const Home = () => {
                   
                   <div className="mb-6">
                     <div className="flex justify-between text-sm font-medium text-gray-300 mb-2">
-                      <span>Recaudado: ${cause.currentAmount}</span>
-                      <span>Meta: ${cause.goalAmount}</span>
+                      <span>Recaudado: ${cause.currentAmount.toLocaleString()}</span>
+                      <span>Meta: ${cause.goalAmount.toLocaleString()}</span>
                     </div>
-                    <div className="w-full bg-gray-700 rounded-full h-2.5">
+                    {/* LA BARRA DE PROGRESO (Ya la tenías, solo le di formato a los números arriba) */}
+                    <div className="w-full bg-gray-700 rounded-full h-2.5 overflow-hidden">
                       <div 
-                        className="bg-blue-600 h-2.5 rounded-full transition-all duration-1000 ease-out" 
+                        className="bg-gradient-to-r from-blue-500 to-green-400 h-2.5 rounded-full transition-all duration-1000 ease-out" 
                         style={{ width: `${progress}%` }}
                       ></div>
                     </div>
