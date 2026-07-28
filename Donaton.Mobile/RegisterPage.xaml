@@ -15,14 +15,21 @@
             </Frame>
 
             <Frame BackgroundColor="#1F2937" BorderColor="#374151" CornerRadius="10" Padding="0" HasShadow="False">
-                <Entry x:Name="EmailEntry" Placeholder="Correo Electrónico" Keyboard="Email" TextColor="White" PlaceholderColor="#6B7280" BackgroundColor="Transparent" Margin="15,5" />
+                <!-- NUEVO: TextTransform="Lowercase" para que el usuario lo vea todo en minúsculas -->
+                <Entry x:Name="EmailEntry" Placeholder="Correo Electrónico" Keyboard="Email" TextTransform="Lowercase" TextColor="White" PlaceholderColor="#6B7280" BackgroundColor="Transparent" Margin="15,5" />
             </Frame>
 
-            <Frame BackgroundColor="#1F2937" BorderColor="#374151" CornerRadius="10" Padding="0" HasShadow="False">
+            <Frame BackgroundColor="#1F2937" BorderColor="#374151" CornerRadius="10" Padding="0" HasShadow="False" Margin="0,0,0,0">
                 <Entry x:Name="PasswordEntry" Placeholder="Contraseña" IsPassword="True" TextColor="White" PlaceholderColor="#6B7280" BackgroundColor="Transparent" Margin="15,5" />
             </Frame>
 
-            <Button Text="Crear mi cuenta" BackgroundColor="#10B981" TextColor="White" FontAttributes="Bold" CornerRadius="8" HeightRequest="50" Margin="0,20,0,0" Clicked="OnRegisterClicked" />
+            <Label Text="Debe tener al menos 8 caracteres, 1 mayúscula, 1 número y 1 símbolo." TextColor="#9CA3AF" FontSize="12" Margin="5,-10,0,10" />
+
+            <Frame BackgroundColor="#1F2937" BorderColor="#374151" CornerRadius="10" Padding="0" HasShadow="False">
+                <Entry x:Name="ConfirmPasswordEntry" Placeholder="Confirmar Contraseña" IsPassword="True" TextColor="White" PlaceholderColor="#6B7280" BackgroundColor="Transparent" Margin="15,5" />
+            </Frame>
+
+            <Button Text="Crear mi cuenta" BackgroundColor="#10B981" TextColor="White" FontAttributes="Bold" CornerRadius="8" HeightRequest="50" Margin="0,10,0,0" Clicked="OnRegisterClicked" />
 
         </VerticalStackLayout>
     </ScrollView>

@@ -1,4 +1,5 @@
 using Donaton.Mobile.Services;
+using System.Text.RegularExpressions;
 
 namespace Donaton.Mobile
 {
@@ -14,29 +15,47 @@ namespace Donaton.Mobile
 
         private async void OnRegisterClicked(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(NameEntry.Text) || string.IsNullOrWhiteSpace(EmailEntry.Text) || string.IsNullOrWhiteSpace(PasswordEntry.Text))
+            if (string.IsNullOrWhiteSpace(NameEntry.Text) ||
+                string.IsNullOrWhiteSpace(EmailEntry.Text) ||
+                string.IsNullOrWhiteSpace(PasswordEntry.Text) ||
+                string.IsNullOrWhiteSpace(ConfirmPasswordEntry.Text))
             {
                 await DisplayAlert("Atención", "Todos los campos son obligatorios.", "OK");
+                return;
+            }
+
+            string passwordRegexPattern = @"^(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$";
+
+            if (!Regex.IsMatch(PasswordEntry.Text, passwordRegexPattern))
+            {
+                await DisplayAlert("Contraseña débil", "La contraseña debe tener al menos 8 caracteres, una mayúscula, un número y un símbolo.", "Entendido");
+                return;
+            }
+
+            if (PasswordEntry.Text != ConfirmPasswordEntry.Text)
+            {
+                await DisplayAlert("Atención", "Las contraseñas no coinciden.", "OK");
                 return;
             }
 
             var boton = sender as Button;
             boton.IsEnabled = false;
 
-            // Pasamos el NameEntry como Username
-            var result = await _apiService.RegisterAsync(NameEntry.Text.Trim(), EmailEntry.Text.Trim(), PasswordEntry.Text.Trim());
+            // NUEVO: Limpiamos espacios y forzamos minúsculas antes de enviarlo
+            string correoNormalizado = EmailEntry.Text.Trim().ToLowerInvariant();
+
+            // Pasamos el correo ya procesado a la API
+            var result = await _apiService.RegisterAsync(NameEntry.Text.Trim(), correoNormalizado, PasswordEntry.Text.Trim());
 
             boton.IsEnabled = true;
 
             if (result.Success)
             {
-                // Mostrará: "Usuario registrado exitosamente."
                 await DisplayAlert("¡Excelente!", result.Message, "OK");
                 await Navigation.PopAsync();
             }
             else
             {
-                // Mostrará: "El correo ya está registrado." u otros errores
                 await DisplayAlert("Error", result.Message, "OK");
             }
         }
