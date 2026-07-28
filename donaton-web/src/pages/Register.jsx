@@ -3,7 +3,6 @@ import { useNavigate, Link } from 'react-router-dom';
 import api from '../services/api';
 
 const Register = () => {
-  // 1. Agregamos el estado para el nombre de usuario
   const [username, setUsername] = useState(''); 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -16,6 +15,19 @@ const Register = () => {
     e.preventDefault();
     setError('');
 
+    // 1. Expresión regular para validar la contraseña:
+    // - (?=.*[A-Z]) : Al menos una mayúscula
+    // - (?=.*\d)    : Al menos un número
+    // - (?=.*[\W_]) : Al menos un carácter especial/símbolo
+    // - .{8,}       : Mínimo 8 caracteres de longitud
+    const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/;
+
+    if (!passwordRegex.test(password)) {
+      setError('La contraseña debe tener al menos 8 caracteres, una mayúscula, un número y un símbolo.');
+      return;
+    }
+
+    // 2. Validar que la contraseña y la confirmación coincidan
     if (password !== confirmPassword) {
       setError('Las contraseñas no coinciden.');
       return;
@@ -24,9 +36,8 @@ const Register = () => {
     setIsLoading(true);
 
     try {
-      // 2. Incluimos el username en la petición a tu API
       await api.post('/Auth/register', {
-        username: username, // <-- ¡Aquí mandamos el nombre!
+        username: username, 
         email: email,
         password: password
       });
@@ -59,7 +70,6 @@ const Register = () => {
 
         <form onSubmit={handleRegister} className="space-y-6">
           
-          {/* 3. NUEVO CAMPO: Nombre / Usuario */}
           <div>
             <label className="block text-sm font-medium text-gray-300 mb-2">Nombre / Usuario</label>
             <input
@@ -94,6 +104,10 @@ const Register = () => {
               placeholder="••••••••"
               required
             />
+            {/* Texto de ayuda añadido para mejorar la experiencia de usuario */}
+            <p className="text-xs text-gray-400 mt-2">
+              Debe tener al menos 8 caracteres, 1 mayúscula, 1 número y 1 símbolo.
+            </p>
           </div>
 
           <div>

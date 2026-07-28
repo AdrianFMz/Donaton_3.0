@@ -3,56 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.mobile\\transparencydetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|solutionrelative:transparencydetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.mobile\\transparencydetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|solutionrelative:transparencydetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.mobile\\transparencypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|solutionrelative:transparencypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.mobile\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|solutionrelative:services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.mobile\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.mobile\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.mobile\\transparencypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|solutionrelative:transparencypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.mobile\\causedetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|solutionrelative:causedetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.mobile\\paymentwebpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|solutionrelative:paymentwebpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.mobile\\donationhistorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|solutionrelative:donationhistorypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.mobile\\donationhistorypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|solutionrelative:donationhistorypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.mobile\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.mobile\\paymentwebpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|solutionrelative:paymentwebpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.mobile\\causedetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|solutionrelative:causedetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|c:\\users\\blazingadrian\\desktop\\donatonplus\\donaton_3.0\\donaton.mobile\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6A380F1-C445-7AA2-FB07-3444C6600FA4}|Donaton.Mobile.csproj|solutionrelative:services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,164 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TransparencyPage.xaml",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\TransparencyPage.xaml",
-              "RelativeDocumentMoniker": "TransparencyPage.xaml",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\TransparencyPage.xaml",
-              "RelativeToolTip": "TransparencyPage.xaml",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAUwBUAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-07-05T02:33:31.572Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\MainPage.xaml",
-              "RelativeDocumentMoniker": "MainPage.xaml",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\MainPage.xaml",
-              "RelativeToolTip": "MainPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-07-05T00:56:16.682Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\MainPage.xaml.cs",
-              "RelativeToolTip": "MainPage.xaml.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAUwDsAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-05T00:55:26.289Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CauseDetailPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\CauseDetailPage.xaml.cs",
-              "RelativeDocumentMoniker": "CauseDetailPage.xaml.cs",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\CauseDetailPage.xaml.cs",
-              "RelativeToolTip": "CauseDetailPage.xaml.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAQwEgAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-05T00:55:15.567Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CauseDetailPage.xaml",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\CauseDetailPage.xaml",
-              "RelativeDocumentMoniker": "CauseDetailPage.xaml",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\CauseDetailPage.xaml",
-              "RelativeToolTip": "CauseDetailPage.xaml",
-              "ViewState": "AgIAADEAAAAAAAAAAAAUwEcAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-07-05T00:55:06.014Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "ApiService.cs",
               "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\Services\\ApiService.cs",
               "RelativeDocumentMoniker": "Services\\ApiService.cs",
               "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\Services\\ApiService.cs",
               "RelativeToolTip": "Services\\ApiService.cs",
-              "ViewState": "AgIAAMwAAAAAAAAAAAAkwM0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAuwOIAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T06:34:57.036Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TransparencyDetailPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\TransparencyDetailPage.xaml.cs",
-              "RelativeDocumentMoniker": "TransparencyDetailPage.xaml.cs",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\TransparencyDetailPage.xaml.cs",
-              "RelativeToolTip": "TransparencyDetailPage.xaml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAUwA8AAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-05T02:34:16.61Z",
+              "WhenOpened": "2026-07-16T19:32:10.127Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TransparencyDetailPage.xaml",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\TransparencyDetailPage.xaml",
-              "RelativeDocumentMoniker": "TransparencyDetailPage.xaml",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\TransparencyDetailPage.xaml",
-              "RelativeToolTip": "TransparencyDetailPage.xaml",
-              "ViewState": "AgIAABYAAAAAAAAAAAAUwCwAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-07-05T02:34:07.746Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TransparencyPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\TransparencyPage.xaml.cs",
-              "RelativeDocumentMoniker": "TransparencyPage.xaml.cs",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\TransparencyPage.xaml.cs",
-              "RelativeToolTip": "TransparencyPage.xaml.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAUwBwAAAANAAAAAAAAAA==",
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\MainPage.xaml.cs",
+              "RelativeToolTip": "MainPage.xaml.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAwDkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-05T02:33:40.713Z"
+              "WhenOpened": "2026-07-16T19:11:47.895Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DonationHistoryPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\DonationHistoryPage.xaml.cs",
-              "RelativeDocumentMoniker": "DonationHistoryPage.xaml.cs",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\DonationHistoryPage.xaml.cs",
-              "RelativeToolTip": "DonationHistoryPage.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-05T01:31:07.906Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DonationHistoryPage.xaml",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\DonationHistoryPage.xaml",
-              "RelativeDocumentMoniker": "DonationHistoryPage.xaml",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\DonationHistoryPage.xaml",
-              "RelativeToolTip": "DonationHistoryPage.xaml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MainPage.xaml",
+              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\MainPage.xaml",
+              "RelativeToolTip": "MainPage.xaml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAiwCUAAABsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-07-05T01:30:58.226Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PaymentWebPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\PaymentWebPage.xaml.cs",
-              "RelativeDocumentMoniker": "PaymentWebPage.xaml.cs",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\PaymentWebPage.xaml.cs",
-              "RelativeToolTip": "PaymentWebPage.xaml.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAswDgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-05T01:07:02.41Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PaymentWebPage.xaml",
-              "DocumentMoniker": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\PaymentWebPage.xaml",
-              "RelativeDocumentMoniker": "PaymentWebPage.xaml",
-              "ToolTip": "C:\\Users\\BlazingAdrian\\Desktop\\DonatonPlus\\Donaton_3.0\\Donaton.Mobile\\PaymentWebPage.xaml",
-              "RelativeToolTip": "PaymentWebPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-07-05T01:06:52.966Z"
+              "WhenOpened": "2026-07-05T00:56:16.682Z",
+              "EditorCaption": ""
             }
           ]
         }

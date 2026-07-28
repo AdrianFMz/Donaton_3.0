@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Donaton.Mobile")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+a1eae6ae66865ac95d562afcac9cfb652d0c752a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+2a00d1c4e6c0a63e44879c564d93212a2e9ae88f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Donaton.Mobile")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Donaton.Mobile")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

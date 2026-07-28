@@ -1,4 +1,4 @@
-<api type="debug" assembly-name="Donaton.Mobile" mvid="31cd8c21ef00486fb91f1cf239b3e5c5">
+<api type="debug" assembly-name="Donaton.Mobile" mvid="e839adaba43e45a29e5c62b9f8d5af50">
   <java-to-managed>
     <entry java-name="crc64507bc9ee3e4992f2/MainActivity" managed-name="Donaton.Mobile.MainActivity, Donaton.Mobile" managed-type-token-id="33554450" />
     <entry java-name="crc64507bc9ee3e4992f2/MainApplication" managed-name="Donaton.Mobile.MainApplication, Donaton.Mobile" managed-type-token-id="33554451" />

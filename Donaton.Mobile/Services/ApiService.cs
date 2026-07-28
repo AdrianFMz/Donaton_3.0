@@ -205,8 +205,8 @@ namespace Donaton.Mobile.Services
         }
     }
 
-        // Modelos para las Causas
-        public class Cause
+    // Modelos para las Causas
+    public class Cause
     {
         public int Id { get; set; }
         public string Title { get; set; }
@@ -214,6 +214,16 @@ namespace Donaton.Mobile.Services
         public decimal GoalAmount { get; set; }
         public decimal CurrentAmount { get; set; }
         public string ImageUrl { get; set; }
+
+        public double Progress => GoalAmount > 0 ? (double)(CurrentAmount / GoalAmount) : 0;
+
+        // --- NUEVAS PROPIEDADES PARA LA GRÁFICA NATIVA ---
+        // Almacenarán la altura en píxeles de cada barra
+        public double ChartRecaudadoHeight { get; set; }
+        public double ChartMetaHeight { get; set; }
+
+        // Acorta el título para que quepa bien en el eje X debajo de cada barra
+        public string ShortTitle => string.IsNullOrEmpty(Title) ? "" : (Title.Length > 11 ? Title.Substring(0, 11) + "..." : Title);
     }
 
     // Modelos que coinciden EXACTAMENTE con las respuestas de tu AuthController
